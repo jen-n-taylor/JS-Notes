@@ -1,11 +1,13 @@
 # Destructuring
 
 ## TL;DR
-**Destructuring assignment** makes it possible to unpack values from arrays or properties from objects into distinct variables.
+**Destructuring assignment** is a syntax that makes it possible to unpack values from `Arrays` or properties from `Objects` into distinct variables.
+- it copies items into variables, but the `Array`/`Object` itself doesn't change
+- 
 
 ## Left vs. Right
 
-### Right-side assignment: Object and array literal expression
+### Right-side assignment: Object and Array literal expression
 - a way to create an ad hoc package of data. 
 ```
 const x = [1, 2, 3, 4, 5]
@@ -126,10 +128,6 @@ console.log(a); // 1
 console.log(b); // [2, 3]
 ```
 
-
-
-
-
 ## What is the benefit of destructuring?
 
 -  You can set a defaults
@@ -163,3 +161,8 @@ const [c] = f();
 console.log(c); // 1
 
 ```
+
+## Destructuring Gotchas
+
+1. Pay attention to your commas. You can ignore unwanted elements by using commas to "throw them away"/"skip them".
+2. 
